@@ -1,0 +1,208 @@
+.payPage {
+  display: flex;
+  width: 60%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/038/025/691/large_2x/circuit-board-technology-background-the-circuit-board-sends-signals-to-the-operation-of-electronic-devices-with-light-illustration-vector.jpg");
+  background-size: cover;
+  border-radius: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.formTitle {
+  background-color: rgba(122, 102, 102, 0.4);
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.payForm {
+  margin-right: 40px;
+  margin-left: 40px;
+  position: relative;
+  display: flex;
+  width: 75%;
+  height: 75%;
+  padding: 0 6px 0 6px;
+  border: 1px solid black;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.payFormLabel {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  height: 80px;
+}
+
+.labelText {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 150px;
+  background-color: rgba(122, 102, 102, 0.4);
+  flex: 0 0 30px;
+}
+
+.inputTitle {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 200px;
+  background-color: rgba(122, 102, 102, 0.4);
+  flex: 0 0 30px;
+  font-size: 25px;
+}
+
+.inputForm {
+  width: auto;
+  height: 30px;
+  text-align: center;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  padding: 0;
+}
+
+.pResult {
+  background-color: rgba(122, 102, 102, 0.4);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin: 15px 0 20px 0;
+  flex: 0 0 30px;
+  width: fit-content;
+  padding: 10px;
+}
+
+.payButt {
+  color: rgb(0 0 0);
+  padding: 0px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #38a43c;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-size: medium;
+  font-weight: 300;
+}
+
+.payButt:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.payButt:not(:disabled):active {
+  background-color: #388e3c;
+  transform: scale(0.95);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.popUpContainer {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.popUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #2d60c1;
+  width: 35%;
+  height: 36%;
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid #2d60c1;
+  z-index: 1;
+}
+
+.popUpText {
+  background-color: rgba(122, 102, 102, 0.4);
+  margin: 0;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.popUpButtn {
+  background-position: center;
+  background-color: blue;
+  border-radius: 10px;
+  border: 0;
+  margin-top: 5px;
+}
+
+.popUpButtn:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 360px) and (max-width: 765px) {
+  .payPage {
+    min-width: 300px;
+  }
+
+  .payForm {
+    width: 90%;
+    height: 80%;
+    margin: 0;
+  }
+
+  .formTitle {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .labelText {
+    font-size: 22px;
+    flex: 0 0 23px;
+  }
+
+  .inputForm {
+    border-radius: 7px;
+    width: 250px;
+  }
+
+  .payFormLabel {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inputTitle {
+    font-size: 20px;
+    flex: 0 0 20px;
+  }
+
+  .payButt {
+    margin-top: 10px;
+  }
+
+  .popUp {
+    width: 60%;
+    height: 40%;
+  }
+}
