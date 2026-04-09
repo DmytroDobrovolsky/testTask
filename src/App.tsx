@@ -4,8 +4,8 @@ import Header from "./components/Header/Header";
 function App() {
   return (
     <div className="App">
-       <div className="beam-horizontal"></div>
-        <div className="beam-vertical"></div>
+      <div className="beam-horizontal"></div>
+      <div className="beam-vertical"></div>
       <Header />
       <PayPage />
     </div>

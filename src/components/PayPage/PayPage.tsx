@@ -1,5 +1,5 @@
 import { usePayPage } from "./usePayPage";
-import "./PayPage.css"
+import "./PayPage.css";
 import CircularProgress from "@mui/material/CircularProgress";
 import ClearOutlinedIcon from "@mui/icons-material/ClearOutlined";
 import Select from "@mui/material/Select";

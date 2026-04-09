@@ -1,5 +1,5 @@
 import Button from "@mui/material/Button";
-import "./Header.css"
+import "./Header.css";
 
 const Header = () => {
   return (

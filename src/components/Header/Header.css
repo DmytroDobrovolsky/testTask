@@ -14,7 +14,7 @@
   width: 130px;
   height: 40px;
   font-weight: 500;
-  padding:0;
+  padding: 0;
 }
 
 .buttonText {
@@ -27,14 +27,11 @@
 }
 
 @media (min-width: 360px) and (max-width: 765px) {
+  .headerNav {
+    width: 340px;
+  }
 
-.headerNav {
-  width: 340px;
-}
-
-.headerNav.Button {
-    width: 90px;  
-}
-
-
+  .headerNav.Button {
+    width: 90px;
+  }
 }

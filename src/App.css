@@ -27,12 +27,10 @@
   height: 100vh;
   background: linear-gradient(to bottom, rgb(23 93 176), transparent);
   animation: beamVertical 6s linear infinite;
-  animation-delay: 6s; /* стартує після горизонтального */
 }
 
-
- @keyframes beamHorizontal {
-    0% {
+@keyframes beamHorizontal {
+  0% {
     transform: translateX(-100%);
     opacity: 1;
   }
@@ -44,8 +42,7 @@
     transform: translateX(100%);
     opacity: 0;
   }
-  }
-
+}
 
 @keyframes beamVertical {
   0% {
@@ -58,7 +55,7 @@
   }
   100% {
     transform: translateY(99%);
-    opacity: 0; /* зникає тільки в кінці */
+    opacity: 0;
   }
 }
 
@@ -66,12 +63,10 @@
   .App {
     min-width: 360px;
   }
-
 }
 
 @media (min-width: 360px) and (max-width: 1000px) {
-
- .beam-horizontal,
+  .beam-horizontal,
   .beam-vertical {
     display: none;
   }
