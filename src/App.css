@@ -2,12 +2,77 @@
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  overflow: hidden;
+}
+
+.beam-horizontal {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 0;
+  width: 100vw;
+  height: 4px;
+  background: linear-gradient(to right, rgb(23 93 176), transparent);
+  animation: beamHorizontal 6s linear infinite;
+}
+
+.beam-vertical {
+  position: absolute;
+  z-index: 0;
+  left: 100px;
+  top: 0;
+  width: 4px;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgb(23 93 176), transparent);
+  animation: beamVertical 6s linear infinite;
+  animation-delay: 6s; /* стартує після горизонтального */
+}
+
+
+ @keyframes beamHorizontal {
+    0% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  90% {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  }
+
+
+@keyframes beamVertical {
+  0% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  90% {
+    transform: translateY(99%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(99%);
+    opacity: 0; /* зникає тільки в кінці */
+  }
 }
 
 @media (min-width: 360px) and (max-width: 932px) {
   .App {
     min-width: 360px;
+  }
+
+}
+
+@media (min-width: 360px) and (max-width: 1000px) {
+
+ .beam-horizontal,
+  .beam-vertical {
+    display: none;
   }
 }

@@ -1,5 +1,5 @@
 import { usePayPage } from "./usePayPage";
-import "./PayPage.css";
+import "./PayPage.css"
 import CircularProgress from "@mui/material/CircularProgress";
 import ClearOutlinedIcon from "@mui/icons-material/ClearOutlined";
 import Select from "@mui/material/Select";
@@ -74,7 +74,7 @@ function PayPage() {
             className="inputForm"
             name="usd"
             type="text"
-            defaultValue={0}
+            defaultValue=""
             placeholder="$    "
             onChange={handlePaymentInfoChange}
           />

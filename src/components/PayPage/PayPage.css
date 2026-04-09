@@ -150,7 +150,8 @@
 
 .popUpButtn {
   background-position: center;
-  background-color: blue;
+  background-color: rgb(252, 252, 255);
+  color: #2d60c1;
   border-radius: 10px;
   border: 0;
   margin-top: 5px;
